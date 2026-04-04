@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0d1b2a;
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 22px;
+}
+
+/* Menu */
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00d9ff;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + .menu-icon + nav {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://via.placeholder.com/1200') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #00d9ff;
+    color: black;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #e0e1dd;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Gallery */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    background: #0d1b2a;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background: #0d1b2a;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    nav {
+        display: none;
+        width: 100%;
+        background: #0d1b2a;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
