@@ -11,7 +11,10 @@
 
 <!-- Navbar -->
 <header>
-    <h1 class="logo">Brilliant EM School</h1>
+    <div class="logo">
+        <img src="images/logo.jpeg" alt="School logo">
+        <span> Brilliant EM School</span>
+    </div>
 
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">☰</label>
@@ -21,7 +24,7 @@
         <a href="#about">About</a>
         <a href="#courses">Classes</a>
         <a href="#facilities">Facilities</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#gallery">Activities</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -40,8 +43,8 @@
     <h2>About Our School</h2>
     <p>
         Brilliant EM School has been nurturing young minds for over 20 years with dedication and excellence.
-        We focus on both academic success and character building, helping students grow into confident and responsible individuals.
-        Our experienced teachers and caring environment make learning enjoyable and meaningful.
+        We focus on academic success, discipline, and character building to shape confident individuals.
+        Our caring environment and experienced teachers make learning enjoyable and meaningful.
     </p>
 </section>
 
@@ -72,18 +75,32 @@
         <div class="card">Sports & Playground</div>
         <div class="card">Mini Library</div>
         <div class="card">Transport Facility</div>
-        <div class="card">AC Classrooms (Pre-Primary)</div>
+        <div class="card">AC Rooms for Pre-Primary</div>
     </div>
 </section>
 
 <!-- Gallery -->
 <section id="gallery">
-    <h2>Our Campus</h2>
+    <h2>Field Trips & Activities</h2>
+    <p>Our students actively participate in educational trips and activities for practical learning.</p>
+
     <div class="grid">
-        <img src="https://via.placeholder.com/300">
-        <img src="https://via.placeholder.com/300">
-        <img src="https://via.placeholder.com/300">
-        <img src="https://via.placeholder.com/300">
+        <img src="images/trip3.jpeg" alt="Field Trip">
+        <img src="images/trip2.jpeg" alt="Activity">
+        <img src="images/trip4.jpeg" alt="Students">
+        <img src="images/trip1.jpeg" alt="Learning">
+        <img src="images/trip5.jpeg" alt="students">
+    </div>
+</section>
+<section id="celebrations">
+    <h2>School Celebrations</h2>
+    <p>We celebrate festivals with joy, culture, and unity to build values and traditions in students.</p>
+
+    <div class="grid">
+        <img src="images/school1.jpeg" alt="Sankranthi Celebration">
+        <img src="images/school2.jpeg" alt="Cultural Activities">
+        <img src="images/school3.jpeg" alt="Cultural Activities">
+        <img src="images/school4.jpeg" alt="Students Celebration">
     </div>
 </section>
 
@@ -91,11 +108,11 @@
 <section>
     <h2>Why Choose Us</h2>
     <p>
-        ✔ Strong discipline and moral values  
-        ✔ Excellent academic results every year  
-        ✔ Individual attention to every student  
-        ✔ Safe and friendly environment  
-        ✔ Focus on overall personality development  
+        ✔ Strong discipline and moral values <br>
+        ✔ Excellent academic results every year <br>
+        ✔ Individual attention to every student <br>
+        ✔ Safe and friendly environment <br>
+        ✔ Focus on overall personality development
     </p>
 </section>
 
@@ -103,14 +120,22 @@
 <section id="contact">
     <h2>Contact Us</h2>
     <p><strong>Address:</strong> Vadali, West Godavari, Andhra Pradesh</p>
-    <p><strong>Email:</strong> brilliantschool@gmail.com</p>
+    <p><strong>Email:</strong> brilliantschoolvadali2005@gmail.com</p>
 
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message"></textarea>
-        <button>Send Message</button>
-    </form>
+    <form
+  action="https://formspree.io/f/mykbbnbv"
+  method="POST"
+>
+  <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+</form>
+ 
 </section>
 
 <!-- Footer -->
